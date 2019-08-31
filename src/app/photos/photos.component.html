@@ -1,0 +1,10 @@
+<div *ngIf="missingAlbumId">
+  <p>No has seleccionado un album</p>
+  <a routerLink="/albums">Selecciona el album aqui</a>
+</div>
+
+<div class="photos-grid" *ngIf="!missingAlbumId">
+  <div class="photo-item" *ngFor="let item of photos">
+    <img [src]="item.thumbnailUrl" alt="">
+  </div>
+</div>

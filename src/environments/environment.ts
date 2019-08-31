@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  jsonAPI: 'https://jsonplaceholder.typicode.com/',
+  mockableAPI: 'https://demo1076355.mockable.io/'
 };
 
 /*

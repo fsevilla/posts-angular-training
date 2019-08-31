@@ -1,0 +1,13 @@
+<ul>
+  <li *ngFor="let item of albums">
+    <!-- <a routerLink="/photos" [queryParams]="{album: item.id}">
+      {{ item.title }}
+    </a> -->
+    <a (click)="onSelectAlbum(item.id)">{{item.title}}</a>
+  </li>
+</ul>
+
+<div *ngIf="isLoading">Cargando...</div>
+<div *ngIf="error">
+  No pude traer albums...
+</div>

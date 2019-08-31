@@ -1,0 +1,6 @@
+<div>
+<a routerLink="create">New Post</a>
+  <div *ngFor="let item of posts">
+    <a [routerLink]="item.id">{{item.userId}} - {{item.title}}</a>
+  </div>
+</div>
